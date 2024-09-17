@@ -1,0 +1,25 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light",
+        "nbt": "{BlockStateTag:{level:\"0\"}}"
+      },
+      "title": "The Chosen",
+      "description": "Gain a power beyond you",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "required:gadg",
+    "criteria": {
+      "become": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"demigod\"]}"
+          }
+        }
+      }
+    }
+  }  

@@ -1,0 +1,28 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light",
+        "nbt": "{BlockStateTag:{level:\"1\"}}"
+      },
+      "title": "It Begins",
+      "description": "Have a strange feeling",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "required:becomedemi",
+    "criteria": {
+      "become": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"demigodl0\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 20
+    }
+  }  

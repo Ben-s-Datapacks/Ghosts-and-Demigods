@@ -1,0 +1,28 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light",
+        "nbt": "{BlockStateTag:{level:\"7\"}}"
+      },
+      "title": "God, But Not Creator",
+      "description": "Become a full god",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "required:becomedemil5",
+    "criteria": {
+      "become": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"god\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 100
+    }
+  }  

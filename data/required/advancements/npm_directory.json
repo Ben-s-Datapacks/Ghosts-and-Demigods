@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;1529784456,-807776956,-1770849931,-14947329],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjVlMzE0YTU4MmNjMDVlYzRmNGY2YWYxNmVkZTZkZDU2MjZmOTZjYWI3MmIxOWNiNzI4ZDVkNzEzM2Q5MGU3OSJ9fX0=\"}]}}}"
+    },
+    "title": "Noobs Play Minecraft",
+    "description": "A directory made for all NPM related datapacks and \"dlcs\"",
+    "background": "minecraft:textures/block/blackstone.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {}
+    }
+  }
+}

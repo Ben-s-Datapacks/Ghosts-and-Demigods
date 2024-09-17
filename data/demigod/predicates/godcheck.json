@@ -1,0 +1,25 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "player": {
+        "advancements": {
+          "minecraft:adventure/kill_all_mobs": true,
+          "minecraft:end/kill_dragon": true,
+          "minecraft:end/dragon_egg": true,
+          "minecraft:end/respawn_dragon": true,
+          "minecraft:husbandry/balanced_diet": true,
+          "minecraft:husbandry/bred_all_animals": true,
+          "minecraft:nether/create_full_beacon": true,
+          "minecraft:nether/all_potions": true
+        },
+        "stats": [
+          {
+            "type": "minecraft:killed",
+            "stat": "minecraft:player",
+            "value": 100
+          }
+        ]
+      }
+    }
+  }  

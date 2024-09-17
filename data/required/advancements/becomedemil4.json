@@ -1,0 +1,28 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light",
+        "nbt": "{BlockStateTag:{level:\"5\"}}"
+      },
+      "title": "Let There Be Light",
+      "description": "Become visible",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "required:becomedemil3",
+    "criteria": {
+      "become": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"demigodl4\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 60
+    }
+  }  

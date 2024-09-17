@@ -1,0 +1,11 @@
+{
+  "pack": {
+    "pack_format": 8,
+    "description": [
+      { "text": "A ", "color": "gold" },
+      { "text": "Hearts For Life", "color": "red" },
+      { "text": " addon", "color": "gold" },
+      { "text": "\ntwitch.tv/Tophat Man", "color": "purple" }
+    ]
+  }
+}

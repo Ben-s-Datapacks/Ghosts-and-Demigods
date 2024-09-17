@@ -1,0 +1,45 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light",
+        "nbt": "{BlockStateTag:{level:\"15\"}}"
+      },
+      "title": "He Is Risen",
+      "description": "Witness a god",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "required:seendemil5",
+    "criteria": {
+      "seen": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "looking_at": {
+                    "type": "minecraft:player",
+                    "nbt": "{Tags:[\"god\"]}",
+                    "distance": {
+                      "absolute": {
+                        "min": 0,
+                        "max": 20
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 50
+    }
+  }  

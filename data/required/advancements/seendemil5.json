@@ -1,0 +1,45 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light",
+        "nbt": "{BlockStateTag:{level:\"14\"}}"
+      },
+      "title": "Is This The Power Of A God?",
+      "description": "Witness a full demi-god",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "required:seendemil4",
+    "criteria": {
+      "seen": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "looking_at": {
+                    "type": "minecraft:player",
+                    "nbt": "{Tags:[\"demigodl5\"]}",
+                    "distance": {
+                      "absolute": {
+                        "min": 0,
+                        "max": 20
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 40
+    }
+  }  

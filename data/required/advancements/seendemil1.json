@@ -1,0 +1,45 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light",
+        "nbt": "{BlockStateTag:{level:\"10\"}}"
+      },
+      "title": "Painful To Watch",
+      "description": "Witness a demi-god's pain stage",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "required:seendemil0",
+    "criteria": {
+      "seen": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "looking_at": {
+                    "type": "minecraft:player",
+                    "nbt": "{Tags:[\"demigodl1\"]}",
+                    "distance": {
+                      "absolute": {
+                        "min": 0,
+                        "max": 20
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 20
+    }
+  }  

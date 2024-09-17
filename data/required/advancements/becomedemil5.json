@@ -1,0 +1,28 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light",
+        "nbt": "{BlockStateTag:{level:\"6\"}}"
+      },
+      "title": "Unlimited Power!",
+      "description": "Reach your full potential",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "required:becomedemil4",
+    "criteria": {
+      "become": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"demigodl5\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 70
+    }
+  }  

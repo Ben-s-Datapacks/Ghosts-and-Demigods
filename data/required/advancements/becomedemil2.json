@@ -1,0 +1,28 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light",
+        "nbt": "{BlockStateTag:{level:\"3\"}}"
+      },
+      "title": "Speed Demon",
+      "description": "Enter the speed age",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "required:becomedemil1",
+    "criteria": {
+      "become": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"demigodl2\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 40
+    }
+  }  

@@ -1,0 +1,45 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:light",
+        "nbt": "{BlockStateTag:{level:\"9\"}}"
+      },
+      "title": "A Low-Life",
+      "description": "Witness a demi-god's beginnings",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "required:seendemi",
+    "criteria": {
+      "seen": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "looking_at": {
+                    "type": "minecraft:player",
+                    "nbt": "{Tags:[\"demigodl0\"]}",
+                    "distance": {
+                      "absolute": {
+                        "min": 0,
+                        "max": 20
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "experience": 15
+    }
+  }  
